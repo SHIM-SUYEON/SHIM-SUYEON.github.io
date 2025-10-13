@@ -2,31 +2,70 @@
 <html lang="en">
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Shim Su Yeon</title>
+<title>Your Name — Personal Page</title>
+<meta name="description" content="Your Name — Affiliation, research interests, and links." />
 <link rel="icon" href="data:," />
-<style>
-  :root { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color-scheme: light dark; }
-  body { max-width: 880px; margin: 4rem auto; padding: 0 1rem; }
-  header { display: grid; gap: .25rem; }
-  h1 { margin: 0; font-size: 2rem; }
-  nav a { margin-right: 1rem; text-decoration: none; }
-  .card { border: 1px solid #bbb3; border-radius: 16px; padding: 1rem 1.25rem; margin: 1rem 0; }
-  footer { margin-top: 3rem; opacity: .7; font-size: .9rem; }
-</style>
-<header>
-  <h1>Shim Su Yeon</h1>
-  <nav>
-    <a href="./">Home</a>
-    <a href="about.html">About</a>
-    <a href="https://github.com/SHIM-SUYEON/AcouLetter_prototype">GitHub</a>
-  </nav>
-</header>
-<main>
-  <div class="card">
-    <h2>Shim Su Yeon</h2>
-    <p>Prototype notes, demos, and links will live here.</p>
+<link rel="preload" as="image" href="assets/profile.jpg">
+<link rel="stylesheet" href="styles.css" />
+
+<header class="site-header">
+  <div class="avatar">
+    <img src="assets/profile.jpg" alt="Portrait of Your Name" onerror="this.style.display='none'">
   </div>
+  <div class="intro">
+    <h1>Your Name</h1>
+    <p class="affiliation">Affiliation — e.g., M.S. Student, ABC Lab, XYZ University</p>
+    <p class="tagline">Interests: Acoustic Sensing, Mobile HCI, Speech/Audio ML</p>
+    <div class="links">
+      <a class="btn" href="https://www.linkedin.com/in/your-linkedin/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="mailto:you@example.com">Email</a>
+      <a class="btn outline" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section>
+    <h2>About</h2>
+    <p>
+      Short bio (2–5 sentences). What you do now, what you’ve built, and what you’re excited about.
+      Mention key skills or domains.
+    </p>
+  </section>
+
+  <section>
+    <h2>Selected Projects</h2>
+    <ul class="cards">
+      <li>
+        <h3>AcouLetter</h3>
+        <p>Mid-air thumb gesture recognition on smartphones using acoustic + IMU sensing.</p>
+        <p class="meta"><a href="https://github.com/SHIM-SUYEON/AcouLetter_prototype" target="_blank" rel="noopener">GitHub</a></p>
+      </li>
+      <li>
+        <h3>WaTemp</h3>
+        <p>Non-contact water temperature estimation via smartphone acoustics.</p>
+        <p class="meta"><a href="#" target="_blank" rel="noopener">Project</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Publications / Talks</h2>
+    <ul class="list">
+      <li><strong>Title</strong>, Venue/Year — one-line summary. <a href="#" target="_blank" rel="noopener">PDF</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin/" target="_blank" rel="noopener">your-linkedin</a></p>
+  </section>
 </main>
-<footer>© <span id="y"></span> SHIM-SUYEON</footer>
-<script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+
+<footer class="site-footer">
+  © <span id="y"></span> Your Name
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </html>
