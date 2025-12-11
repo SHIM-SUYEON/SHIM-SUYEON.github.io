@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Your Name — Personal Page</title>
+<meta name="description" content="Your Name — Affiliation, research interests, and links." />
+<link rel="icon" href="data:," />
+<link rel="preload" as="image" href="assets/profile.jpg">
+<link rel="stylesheet" href="styles.css" />
+
+<header class="site-header">
+  <div class="avatar">
+    <img src="assets/profile.jpg" alt="Portrait of Your Name" onerror="this.style.display='none'">
+  </div>
+  <div class="intro">
+    <h1>Shim Su Yeon</h1>
+    <p class="affiliation">M.S. Student, GSAI, POSTECH</p>
+    <p class="tagline">Interests: Mobile computing, Human-AI Interaction</p>
+    <div class="links">
+      <a class="btn" href="https://www.linkedin.com/in/syshim/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="mailto:syshim@postech.ac.kr">Email</a>
+      <a class="btn outline" href="https://github.com/SHIM-SUYEON" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section>
+    <h2>About</h2>
+    <p>
+      Short bio (2–5 sentences). What you do now, what you’ve built, and what you’re excited about.
+      Mention key skills or domains.
+    </p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ul class="cards">
+      <li>
+        <h3>Proj1</h3>
+        <p>Summary1.</p>
+        <p class="meta"><a href="https://github.com/SHIM-SUYEON/" target="_blank" rel="noopener">GitHub</a></p>
+      </li>
+      <li>
+        <h3>Proj2</h3>
+        <p>Summary2.</p>
+        <p class="meta"><a href="#" target="_blank" rel="noopener">Project</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+    <ul class="list-unstyled"> <li style="margin-bottom: 20px;">
+      <div class="title" style="font-size: 1.1em; font-weight: bold;">
+        MIRA: A Transformer-Based Framework for Idler Roller Anomaly Detection and Localization
+      </div>
+      <div class="author">
+        Nam, Y., <strong>Shim, S. Y.</strong>, Shin, K. S., & Suh, Y.-J.
+      </div>
+      <div class="periodical" style="font-style: italic; color: #555;">
+        Sensors, 25(24), 7469 (2025)
+      </div>
+      <div class="links" style="margin-top: 5px;">
+        <a href="https://doi.org/10.3390/s25247469" target="_blank" rel="noopener" style="text-decoration: none; border: 1px solid #333; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; color: #333;">
+          <i class="fas fa-file-pdf"></i> PDF
+        </a>
+        </div>
+    </li>
+
+  </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:syshim@postech.ac.kr">syshim@postech.ac.kr</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/syshim/" target="_blank" rel="noopener">syshim</a></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  © <span id="y"></span> Your Name
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</html>
