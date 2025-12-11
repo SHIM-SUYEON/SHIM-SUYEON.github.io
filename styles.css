@@ -210,7 +210,7 @@ h2 { margin: 0 0 .75rem; font-size: 1.35rem; }
 /* --- Timeline L/R Container --- */
 .center-timeline {
   position: relative;
-  max-width: 100%;
+  max-width: 100%; /* 1200 px */
   margin: 40px auto;
   padding: 0;
 }
